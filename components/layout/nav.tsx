@@ -71,8 +71,8 @@ export function Nav() {
           aria-label="Main navigation"
           className={cn(
             "relative mx-auto flex max-w-[1080px] items-center justify-between gap-2 rounded-full px-2.5 py-2 transition-all duration-500 sm:px-3",
-            scrolled
-              ? "glass-strong border border-line shadow-[0_18px_60px_-30px_rgba(0,0,0,0.7)]"
+            scrolled || open
+              ? "nav-pill border border-line shadow-[0_18px_60px_-30px_rgba(0,0,0,0.7)]"
               : "border border-transparent",
           )}
         >
@@ -156,7 +156,7 @@ export function Nav() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={reduce ? { opacity: 0 } : { opacity: 0, y: -8, scale: 0.98 }}
                 transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
-                className="glass-strong absolute inset-x-0 top-full mt-2 rounded-3xl p-3 shadow-2xl outline-none lg:hidden"
+                className="menu-panel absolute inset-x-0 top-full mt-2 rounded-3xl border border-line p-3 shadow-2xl outline-none lg:hidden"
               >
                 <div className="flex flex-col">
                   {nav.map((item, index) => (

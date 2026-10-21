@@ -14,6 +14,8 @@
   --line: rgba(21, 18, 28, 0.1);
   --glass: rgba(255, 255, 255, 0.72);
   --glass-strong: rgba(255, 255, 255, 0.9);
+  --nav-bg: rgba(255, 255, 255, 0.98);
+  --menu-bg: #ffffff;
   --card-shadow: 0 24px 80px -32px rgba(21, 18, 28, 0.26);
   --grid-dot: rgba(21, 18, 28, 0.12);
   --violet: #6d28d9;
@@ -39,6 +41,8 @@
   --line: rgba(255, 255, 255, 0.09);
   --glass: rgba(255, 255, 255, 0.045);
   --glass-strong: rgba(255, 255, 255, 0.075);
+  --nav-bg: rgba(13, 13, 20, 0.97);
+  --menu-bg: #0d0d14;
   --card-shadow: 0 24px 80px -32px rgba(0, 0, 0, 0.8);
   --grid-dot: rgba(255, 255, 255, 0.09);
   --violet: #8b5cf6;
@@ -179,6 +183,18 @@ html.lenis body {
   border: 1px solid var(--line);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+}
+
+.nav-pill {
+  background: var(--nav-bg);
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+}
+
+.menu-panel {
+  background: var(--menu-bg);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
 }
 
 .card-shadow {
